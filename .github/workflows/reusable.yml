@@ -27,5 +27,7 @@ jobs:
       - name: List files
         run: ls -l
       - name: Output information
+        run: echo "Deploying & Uploading..."
+      - name: Set result output
         id: out-info
-        run: echo "Deploying & Uploading"
+        run: echo "step-result=success" >> $GITHUB_OUTPUT

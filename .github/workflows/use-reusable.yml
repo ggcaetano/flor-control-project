@@ -88,5 +88,3 @@ jobs:
         run: |
           echo "Something went wrong"
           echo "${{ toJSON(github) }}"
-      - name: Set result output
-        run: echo "step-result=success" >> $GITHUB_OUTPUT
